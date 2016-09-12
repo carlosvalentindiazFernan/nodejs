@@ -1,7 +1,7 @@
 var User = require('./models/user');
 module.exports = function(app){
 	app.get('/', function(req, res){
-		res.send("Hello world");
+		res.send("mongo");
 	});
 
 	app.get('/:username/:password', function(req, res){
