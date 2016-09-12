@@ -17,13 +17,6 @@ app.use(session({secret: 'anystringoftext',
 				 resave: true}));
 
 
-// app.use('/', function(req, res){
-// 	res.send('Our First Express program!');
-// 	console.log(req.cookies);
-// 	console.log('================');
-// 	console.log(req.session);
-// });
-
 require('./app/routes.js')(app);
 
 app.listen(port);
